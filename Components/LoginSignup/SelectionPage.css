@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300;900&display=swap');
+
+
+  .App-header {
+    background-color: inherit;
+    padding: 2em;
+    font-family: "Merienda", sans-serif;
+  }
+
+  ul {
+    list-style-type: none; 
+  }
+  
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-left: 700px;
+    margin-top: -200px;
+  }
+  
+  nav button {
+    background: none;
+    border: none;
+    padding: 20px 40px;
+    align-content: center;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 25px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav button:hover {
+    background-color: #FFD700; 
+  }
+  
+  .welcome-section h1 {
+    font-size: 3.0em; /* Changed font size to 5em */
+    color: #333; /* Dark font color for contrast */
+    margin: 70px 0 0.5em 0; /* Adjusted margin-top */
+    text-align: left;
+    margin-right: 800px;
+    position: relative;
+    padding: 1px 1px 1px 1px;
+    font-weight: 750;
+    line-height: 1; /* Set line height to 1 */
+}
+
+  .welcome-section p {
+    font-size: 1.5em;
+    color: #555; /* Slightly lighter font color */
+    margin: 0;
+    margin-right: 800px;
+    font-size: 38px;
+    font-weight: 650;
+  }
+  
+  .action-section {
+    margin: 5px;
+    margin-right: 200px;
+    margin-top: 70px;
+  }
+  
+  .get-started-button {
+    background-color: #FFD700; /* Yellow background color */
+    color: #333;
+    border: none;
+    border-radius: 80px;
+    padding: 20px 50px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    margin-right: 600px;
+    font-weight: bold;
+  }
+  
+  .get-started-button:hover {
+    opacity: 0.8;
+  }
+  
+  .search-box {
+    position: relative;
+    margin-top: 20px;
+  }
+  
+  .search-box input {
+    border: none;
+    border-radius: 20px;
+    padding: 10px 15px;
+    width: 240px;
+  }
+  
+  .search-button {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .robot-with-pizza-home {
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 300px; /* Set this to the desired size */
+    width: 300px; /* Set this to the desired size */
+    margin-top: -700px;
+    margin-right: -100px;
+  }
+
+  .robot-home-image {
+    height: 600px; /* Set this to the desired height */
+    width: auto; /* Allow the width to adjust proportionally */
+}
+
+  /* Ensure that the font styles are consistent with the design */
+  body {
+    font-family: 'Arial', sans-serif; /* Assuming Arial is used in the design */
+  }
+
+  marquee {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-right: 200px; 
+    margin-top: 10px;
+  }
+
+  /* .scrolling-container {
+    position: absolute;
+    top: 80%; 
+    right: 80px; 
+    transform: translateY(-50%);
+    width: 500px; 
+    max-height: 300px; 
+    overflow: hidden;
+    font-size: 25px;
+    font-weight: 650;
+  } */
+
+  .video-container {
+    width: 100%;
+    max-width: 800px; 
+    margin: 0 auto; /* Center the video horizontally */
+    margin-top: -640px;
+    margin-right: -49px;
+  }
+  
+  video {
+    width: 53%;
+    height: auto; /* Maintain aspect ratio */
+  }
