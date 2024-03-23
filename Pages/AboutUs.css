@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Merienda:wght@300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Merienda:wght@300..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.about-team-page {
+  padding: 20px;
+  text-align: center;
+  font-size: 22px;
+  font-family: "Merienda", sans-serif;
+}
+
+.team-members {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 93px;
+}
+
+.team-member {
+  text-align: center;
+  margin-top: -20px;
+}
+
+.team-member:hover {
+  transform: scale(1.2);
+}
+
+.member-image {
+  width: 300px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 5px;
+}
+
+.developer {
+  font-size: 24px; /* Adjust the font size as needed */
+  font-family: "Tinos", sans-serif;
+  font-weight: bold;
+}
