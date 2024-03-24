@@ -26,7 +26,7 @@ function ChatbotHomepage() {
   useEffect(() => {
     async function fetchInitialQuestion() {
       try { 
-        const response = await fetch('http://127.0.0.1:5000/api/choice');
+        const response = await fetch('https://backend-oy0f.onrender.com/api/choice');
         if (response.ok) {
           const data = await response.json();
           const question = data.question;
@@ -47,7 +47,7 @@ function ChatbotHomepage() {
     setChatHistory(prevChatHistory => [...prevChatHistory, { text: userInput, from: 'User' }]);
 
     try {
-      const response = await fetch('http://127.0.0.1:5000/api/choice-response', {
+      const response = await fetch('https://backend-oy0f.onrender.com/api/choice-response', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -70,7 +70,7 @@ function ChatbotHomepage() {
 
   const fetchNextQuestion = async () => {
     try {
-      const response = await fetch('http://127.0.0.1:5000/api/get-location');
+      const response = await fetch('https://backend-oy0f.onrender.com/api/get-location');
       if (response.ok) {
         const data = await response.json();
         const question = data.question;
@@ -97,7 +97,7 @@ function ChatbotHomepage() {
     const currentMessage = message;
 
     try {
-        const response = await fetch('http://127.0.0.1:5000/api/handle-input', {
+        const response = await fetch('https://backend-oy0f.onrender.com/api/handle-input', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -133,7 +133,7 @@ function ChatbotHomepage() {
   useEffect(() => {
     async function fetchTypeQuestion() {
       try {
-        const response = await fetch('http://127.0.0.1:5000/api/get-type');
+        const response = await fetch('https://backend-oy0f.onrender.com/api/get-type');
         if (response.ok) {
           const data = await response.json();
           const question = data.question;
@@ -156,7 +156,7 @@ function ChatbotHomepage() {
     const currentMessage = message;
   
     try {
-      const response = await fetch('http://127.0.0.1:5000/api/handle-type', {
+      const response = await fetch('https://backend-oy0f.onrender.com/api/handle-type', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -193,7 +193,7 @@ function ChatbotHomepage() {
   useEffect(() => {
     async function fetchCuisineTypeQuestion() {
       try {
-        const response = await fetch('http://127.0.0.1:5000/api/get-cusinetype');
+        const response = await fetch('https://backend-oy0f.onrender.com/api/get-cusinetype');
         if (response.ok) {
           const data = await response.json();
           const question = data.question;
@@ -222,7 +222,7 @@ function ChatbotHomepage() {
         { text: currentMessage, from: 'You' }
       ]);
 
-      const response = await fetch('http://127.0.0.1:5000/api/handle-restaurant-type', {
+      const response = await fetch('https://backend-oy0f.onrender.com/api/handle-restaurant-type', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -259,7 +259,7 @@ function ChatbotHomepage() {
   useEffect(() => {
     async function fetchCostPersonQuestion() {
       try {
-        const response = await fetch('http://127.0.0.1:5000/api/get-costPerson');
+        const response = await fetch('https://backend-oy0f.onrender.com/api/get-costPerson');
         if (response.ok) {
           const data = await response.json();
           const question = data.question;
@@ -284,7 +284,7 @@ function ChatbotHomepage() {
     const currentMessage = message;
   
     try {
-      const response = await fetch('http://127.0.0.1:5000/api/handle-costPerson', {
+      const response = await fetch('https://backend-oy0f.onrender.com/api/handle-costPerson', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -323,7 +323,7 @@ function ChatbotHomepage() {
   useEffect(() => {
     async function fetchallergyQuestion() {
       try {
-        const response = await fetch('http://127.0.0.1:5000/api/get-allergy');
+        const response = await fetch('https://backend-oy0f.onrender.com/api/get-allergy');
         if (response.ok) {
           const data = await response.json();
           const question = data.question;
@@ -348,7 +348,7 @@ function ChatbotHomepage() {
     const currentMessage = message;
   
     try {
-      const response = await fetch('http://127.0.0.1:5000/api/handle-allergy', {
+      const response = await fetch('https://backend-oy0f.onrender.com/api/handle-allergy', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
