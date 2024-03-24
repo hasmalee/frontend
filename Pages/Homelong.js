@@ -20,7 +20,7 @@ const Homelong = () => {
   useEffect(() => {
     async function fetchInitialQuestion() {
       try {
-        const response = await fetch('http://127.0.0.1:5000/api/choice');
+        const response = await fetch('https://backend-oy0f.onrender.com');
         if (response.ok) {
           const data = await response.json();
           const question = data.question;
